@@ -1,0 +1,11 @@
+{
+  "name": "nerds",
+  "version": "1.0.0",
+  "description": "Тренировочный проект по вёрстке от Html Academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akimba",
+  "license": "ISC"
+}
