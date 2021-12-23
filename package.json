@@ -4,8 +4,13 @@
   "description": "Тренировочный проект по вёрстке от Html Academy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "stylelint" : "stylelint source/**/*.css",
+    "test": "npm run stylelint"
   },
   "author": "Akimba",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "14.2.0",
+    "stylelint-config-htmlacademy": "0.1.12"
+  }
 }
