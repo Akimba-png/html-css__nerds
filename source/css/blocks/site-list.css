@@ -6,7 +6,6 @@
   padding: 0;
   max-width: 750px;
   list-style: none;
-  outline: 1px solid green;
 }
 
 .site-list__link {
@@ -16,7 +15,6 @@
   max-width: 140px;
   min-height: 100%;
   word-wrap: break-word;
-  outline: 1px solid orangered;
 }
 
 .site-list__link:hover {

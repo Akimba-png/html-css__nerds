@@ -3,16 +3,18 @@
 }
 
 .page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   margin: 0;
   padding: 0;
   min-width: 1200px;
+  min-height: 100%;
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
-  outline: 1px solid orange;
 }
 
 .page-body img {
