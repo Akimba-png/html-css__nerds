@@ -1,0 +1,67 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0 2px;
+  max-width: 400px;
+  list-style: none;
+  outline: 1px solid green;
+}
+
+.social__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-color: var(--social-icons-color);
+}
+
+.social__link:hover {
+  background-color: var(--social-icons-hover-color);
+}
+
+.social__link:active {
+  box-shadow: inset 0 3px 0 var(--social-icons-shadow-color);
+  background-color: var(--social-icons-active-color);
+}
+
+.social__link--vk::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 15px;
+  background-image: url("./../../img/icons/sprite.svg#vk-icon");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__link--fb::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 22px;
+  background-image: url("./../../img/icons/sprite.svg#fb-icon");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__link--insta::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background-image: url("./../../img/icons/sprite.svg#insta-icon");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__link:active::before {
+  opacity: 0.3;
+}

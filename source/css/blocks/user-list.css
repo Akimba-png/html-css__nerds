@@ -1,0 +1,37 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+  min-width: 158px;
+  max-width: 158px;
+  list-style: none;
+  outline: 1px solid orange;
+}
+
+.user-list__link {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 18px 0 18px 65px;
+  text-align: end;
+}
+
+.user-list__link:hover {
+  color: var(--navigation-hover-color);
+}
+
+.user-list__link:active {
+  color: var(--navigation-active-color);
+}
+
+.user-list__link::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 44px;
+  width: 15px;
+  height: 15px;
+  background-image: url("./../../img/icons/sprite.svg#cart");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

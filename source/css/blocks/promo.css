@@ -1,0 +1,16 @@
+.promo {
+  padding: 5px 15px;
+  outline: 1px solid blue;
+}
+
+.promo__slogan {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.promo__offer {
+  margin: 0;
+}

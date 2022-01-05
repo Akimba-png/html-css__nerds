@@ -1,0 +1,12 @@
+:root {
+  --background-color: #eeeeee;
+  --logo-active-color: #a6a6a6;
+  --navigation-hover-color: #fb565a;
+  --navigation-active-color: rgba(0, 0, 0, 0.3);
+
+  /* footer colors */
+  --social-icons-color: #e1e1e1;
+  --social-icons-hover-color: #e74246;
+  --social-icons-active-color: #d7373b;
+  --social-icons-shadow-color: rgba(0, 1, 1, 0.1);
+}

@@ -1,2 +1,10 @@
 @import "./blocks/fonts.css";
+@import "./blocks/colors.css";
 @import "./blocks/global.css";
+@import "./blocks/main-navigation.css";
+@import "./blocks/site-list.css";
+@import "./blocks/user-list.css";
+@import "./blocks/main-footer.css";
+@import "./blocks/social.css";
+@import "./blocks/promo.css";
+@import "./blocks/main-header.css";

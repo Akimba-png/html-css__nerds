@@ -1,0 +1,19 @@
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 124px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  outline: 1px solid blue;
+}
+
+.main-navigation__link-logo:active {
+  color: var(--logo-active-color);
+}
+
+.main-navigtion__site-list {
+  flex-grow: 1;
+}

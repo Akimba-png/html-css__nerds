@@ -1,38 +1,65 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head class="page">
+<html class="page" lang="ru">
+  <head>
     <title>Студия Nerds</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav>
-        <a>
-          <img src="./img/logo.svg" width="160" height="65" alt="Логотип студии Nerds">
+      <nav class="main-navigation wrapper">
+        <a class="main-navigation__link-logo">
+          <svg width="160" height="65" role="img" aria-label="Логотип студии Nerds">
+            <use xlink:href="./img/icons/sprite.svg#logo"></use>
+          </svg>
         </a>
-        <ul class="site-navigation">
+        <ul class="main-navigtion__site-list site-list">
           <li>
-            <a class="site-navigation__link" href="./blank.html">Студия</a>
+            <a class="site-list__link" href="./blank.html">Студия</a>
           </li>
           <li>
-            <a class="site-navigation__link" href="./blank.html">Клиенты</a>
+            <a class="site-list__link" href="./blank.html">Клиенты</a>
           </li>
           <li>
-            <a class="site-navigation__link" href="./blank.html">Магазин</a>
+            <a class="site-list__link" href="./blank.html">Магазин</a>
           </li>
           <li>
-            <a class="site-navigation__link" href="./blank.html">Контакты</a>
+            <a class="site-list__link" href="./blank.html">Контакты</a>
           </li>
         </ul>
-        <ul class="user-navigation">
+        <ul class="user-list">
           <li>
-            <a href="./blank.html">Корзина</a>
+            <a class="user-list__link" href="./blank.html">Корзина</a>
           </li>
         </ul>
       </nav>
     </header>
     <main></main>
-    <footer class="main-footer"></footer>
+    <footer class="main-footer wrapper">
+      <section class="social">
+        <h1 class="visually-hidden">Студия Nerds в социальных сетях</h1>
+        <ul class="social__list">
+          <li>
+            <a class="social__link social__link--vk" href="./blank.html">
+              <span class="visually-hidden">страница студии Nerds в Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__link social__link--fb" href="./blank.html">
+              <span class="visually-hidden">страница студии Nerds в Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__link social__link--insta" href="./blank.html">
+              <span class="visually-hidden">страница студии Nerds в Instagramm</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="promo">
+        <b class="promo__slogan">Давайте дружить, это выгодно!</b>
+        <p class="promo__offer">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
   </body>
 </html>
