@@ -20,8 +20,6 @@ const createSprite = () => {
   }))
   .pipe(gulp.dest('./source/img/icons'));
 }
-exports.sprite = createSprite;
-
 
 const server = (done) => {
   browserSync.init({
