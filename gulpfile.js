@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
-const svgSprite = require('gulp-svg-sprite');
+const svgSprite = require("gulp-svg-sprite");
+const del = require("del");
 
 
 const styles = () => {
@@ -36,4 +37,8 @@ const watcher = () => {
   gulp.watch('./source/*.html').on('change', browserSync.reload);
 };
 
-exports.default = gulp.series(createSprite, server, watcher);
+const removeSprite = () => {
+  return del("./source/img/icons/sprite.svg");
+};
+
+exports.default = gulp.series(removeSprite, createSprite, server, watcher);

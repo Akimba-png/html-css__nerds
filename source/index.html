@@ -3,6 +3,7 @@
   <head>
     <title>Студия Nerds</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page-body">
@@ -34,7 +35,49 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="page-main">
+      <section class="features slider">
+        <h1 class="visually-hidden">Преимущества студии Nerds</h1>
+        <dl class="features__list slider__list wrapper">
+          <div class="features__item features__item--1 features__item--current slider__item">
+            <dt class="features__slogan">
+              Долго, дорого,<br>
+              скрупулезно.
+            </dt>
+            <dd class="features__text">
+              Математически выверенный дизайн<br>
+              для вашего сайта или мобильного приложения.
+            </dd>
+          </div>
+          <div class="features__item features__item--2 slider__item">
+            <dt class="features__slogan">
+              Любим математику<br>
+              как никто другой
+            </dt>
+            <dd class="features__text">
+              Никакого креатива, только математические формулы<br>
+              для расчета идеальных пропорций
+            </dd>
+          </div>
+          <div class="features__item features__item--3 slider__item">
+            <dt class="features__slogan">
+              Только ночь,<br>
+              только хардкор
+            </dt>
+            <dd class="features__text">
+              Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.
+            </dd>
+          </div>
+        </dl>
+        <button class="features__button button button--features" type="button"><span class=button__text>Узнать больше</span></button>
+        <div class="features__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+        </div>
+      </section>
+    </main>
     <footer class="main-footer wrapper">
       <section class="social">
         <h1 class="visually-hidden">Студия Nerds в социальных сетях</h1>
@@ -61,5 +104,6 @@
         <p class="promo__offer">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,22 @@
+.slider__toggle {
+  position: relative;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--slider-toggle-background-color);
+}
+
+.slider__toggle--current::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid var(--slider-toggle-current-color);
+}
