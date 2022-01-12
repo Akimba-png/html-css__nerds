@@ -78,7 +78,7 @@
           <button class="slider__toggle" type="button"></button>
         </div>
       </section>
-      <section class="services wrapper">
+      <section class="page-main__services services wrapper">
         <h2 class="visually-hidden">Продукция студии Nerds</h2>
         <ul class="services__list">
           <li class="services__item">
@@ -91,7 +91,7 @@
               Мир никогда не будет прежним<br>
               после того как увидит ваш сайт!
             </p>
-            <button class="services__button button" type="button">Заказать</button>
+            <button class="services__button button" type="button"><span class="button__text">Заказать</span></button>
           </li>
           <li class="services__item">
             <picture>
@@ -103,7 +103,7 @@
               Покорите топ-10 приложений<br>
               в AppStore и Google Play
             </p>
-            <button class="services__button button" type="button">Заказать</button>
+            <button class="services__button button button--app" type="button"><span class="button__text">Заказать</span></button>
           </li>
           <li class="services__item">
             <picture>
@@ -115,10 +115,52 @@
               Вы даже не подозреваете,<br>
               насколько вы изумительны!
             </p>
-            <button class="services__button button" type="button">Заказать</button>
+            <button class="services__button button button--presentation" type="button"><span class="button__text">Заказать</span></button>
           </li>
         </ul>
       </section>
+
+      <div class="container-about wrapper">
+        <section class="about">
+          <h2 class="visually-hidden">Информация о студии</h2>
+          <b class="about__slogan">
+            Мы — маленькая, но гордая<br>
+            дизайн-студия из Краснодара.
+          </b>
+          <p class="about__text">
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+            превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <b class="about__offers">Выполняем заказы на разработку:</b>
+          <ul class="about__list">
+            <li class="about__item">Веб-сайтов любой сложности</li>
+            <li class="about__item">Мобильных приложений для iOS и Android</li>
+            <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+        <section class="stats">
+          <h2 class="visually-hidden">Статистика выполненных работ</h2>
+          <picture>
+            <!-- <source type="image/webp" srcset="stats-logo.webp 1x, stats-logo@2x.webp 2x"> -->
+            <img class="stats__image" src="img/stats-logo.png" srcset="img/stats-logo@2x.png 2x" width="360" height="208" alt="Логотип дизайн студии Nerds">
+          </picture>
+          <b class="stats__slogan">с 2004 года Любим точность во всем:</b>
+          <dl class="stats__list">
+            <div class="stats__item">
+              <dt class="stats__title">146<sup class="stats__measure">%</sup></dt>
+              <dd class="stats__text">Уровень самоотдачи</dd>
+            </div>
+            <div class="stats__item">
+              <dt class="stats__title">100<sup class="stats__measure">%</sup></dt>
+              <dd class="stats__text">Соблюдение сроков</dd>
+            </div>
+            <div class="stats__item">
+              <dt class="stats__title">50<sup class="stats__measure">%</sup></dt>
+              <dd class="stats__text">Минимальная предоплата</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
     </main>
     <footer class="main-footer wrapper">
       <section class="social">

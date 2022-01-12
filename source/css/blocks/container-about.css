@@ -1,0 +1,6 @@
+.container-about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-bottom: 43px;
+  border-bottom: 2px solid var(--background-color);
+}

@@ -1,0 +1,42 @@
+.about {
+  padding-top: 34px;
+}
+
+.about__slogan {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.about__text {
+  margin-bottom: 40px;
+}
+
+.about__offers {
+  display: block;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.about__list {
+  padding: 0;
+  list-style: none;
+}
+
+.about__item {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 37px;
+}
+
+.about__item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: var(--before-element-color);
+}

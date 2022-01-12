@@ -1,0 +1,44 @@
+.stats {
+  padding-left: 27px;
+}
+
+.stats__image {
+  margin-bottom: 30px;
+}
+
+.stats__slogan {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  margin-left: 17px;
+}
+
+.stats__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 21px;
+  row-gap: 45px;
+}
+
+.stats__item {
+  width: 98px;
+}
+
+.stats__title {
+  margin-bottom: 10px;
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.stats__measure {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.stats__text {
+  margin: 0;
+  line-height: 18px;
+  word-wrap: break-word;
+}

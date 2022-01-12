@@ -18,8 +18,17 @@
   --button-active-shadow-color: rgba(0, 1, 1, 0.1);
   --button-feature-border-color: #000000;
   --button-feature-shadow-color: rgba(0, 0, 0, 0.25);
+  --button-app-color: #00ca74;
+  --button-app-hover-color: #00bc6c;
+  --button-app-active-color: #00aa62;
+  --button-presentation-color: #efc849;
+  --button-presentation-hover-color: #eab534;
+  --button-presentation-active-color: #e5a722;
 
   /* slider */
   --slider-toggle-background-color: #ffffff;
   --slider-toggle-current-color: #c1c1c1;
+
+  /* about */
+  --before-element-color: #fb565a;
 }
