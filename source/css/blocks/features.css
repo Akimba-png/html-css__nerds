@@ -4,6 +4,7 @@
 }
 
 .features__list {
+  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -62,10 +63,6 @@
 
 .features__text {
   margin: 0;
-}
-
-.features__button {
-  margin-left: 21px;
 }
 
 .features__toggles {
