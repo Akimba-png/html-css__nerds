@@ -1,0 +1,19 @@
+.contacts {
+  height: 416px;
+  overflow: hidden;
+}
+
+
+.contacts__map-image {
+  display: block;
+  min-width: 100%;
+  min-height: 416px;
+}
+
+.contacts__wrapper {
+  position: relative;
+}
+
+.contacts__map-canvas {
+  height: 416px;
+}

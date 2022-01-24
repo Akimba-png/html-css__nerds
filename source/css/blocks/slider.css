@@ -6,6 +6,7 @@
   border: none;
   border-radius: 50%;
   background-color: var(--slider-toggle-background-color);
+  cursor: pointer;
 }
 
 .slider__toggle--current::before {

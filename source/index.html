@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./leaflet/leaflet.css">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -162,7 +163,7 @@
           </dl>
         </section>
       </div>
-      <section class="partners wrapper">
+      <section class="page-main__partners partners wrapper">
         <h2 class="visually-hidden">Партнёры студии Nerds</h2>
         <ul class="partners__list">
           <li class="partners__item">
@@ -199,6 +200,33 @@
           </li>
         </ul>
       </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контактаная информация студии</h2>
+
+        <div class="contacts__wrapper wrapper">
+          <div class="contact-details">
+            <h3 class="contact-details__title">Nёrds design studio</h3>
+            <p class="contact-details__address">
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <a class="contact-details__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="button button--contact" href="./blank.html">Напишите нам</a>
+          </div>
+        </div>
+        <picture>
+          <!-- <source type="image/webp" srcset="./img/map.webp 1x, ./img/map@2x.webp 2x"> -->
+          <img
+            class="contacts__map-image"
+            height="416"
+            src="./img/map.png"
+            srcset="./img/map@2x.png 2x"
+            alt="Изображение с картой как добраться до студии"
+          >
+        </picture>
+        <div class="contacts__map-canvas" id="map"></div>
+      </section>
     </main>
     <footer class="main-footer wrapper">
       <section class="social">
@@ -227,5 +255,6 @@
       </div>
     </footer>
     <script src="js/index.js" type="module"></script>
+    <script src="./leaflet/leaflet.js"></script>
   </body>
 </html>

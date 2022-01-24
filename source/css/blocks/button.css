@@ -1,4 +1,5 @@
 .button {
+  display: block;
   padding: 16px 0;
   box-sizing: border-box;
   width: 160px;
@@ -7,6 +8,7 @@
   line-height: 18px;
   word-wrap: break-word;
   text-transform: uppercase;
+  text-align: center;
   color: var(--button-text-color);
   background-color: var(--button-background-color);
   border: none;
@@ -56,4 +58,8 @@
 
 .button--presentation:active {
   background-color: var(--button-presentation-active-color);
+}
+
+.button--contact {
+  width: 219px;
 }
