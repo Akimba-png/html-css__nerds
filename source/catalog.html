@@ -11,12 +11,7 @@
     <header class="main-header">
       <nav class="main-navigation wrapper">
         <a class="main-navigation__link-logo" href="./index.html">
-          <svg
-            width="160"
-            height="65"
-            role="img"
-            aria-label="Логотип студии Nerds"
-          >
+          <svg width="160" height="65" role="img" aria-label="Логотип студии Nerds">
             <use xlink:href="./img/icons/sprite.svg#logo"></use>
           </svg>
         </a>
@@ -41,100 +36,150 @@
         </ul>
       </nav>
     </header>
+
     <main class="page-catalog">
-      <div class="page-catalog__cotainer">
+      <div class="page-catalog__container">
         <h1 class="page-catalog__title">Магазин готовых шаблонов</h1>
       </div>
       <div class="page-catalog__wrapper wrapper">
-        <section>
-          <h2 class="visually-hidden">Фильтрация каталога</h2>
-          <form method="post" action="https://echo.htmlacademy.ru">
-            <fieldset class="layout-filter">
-              <legend class="layout-filter__title">Сетка</legend>
-              <ul class="layout-filter__list">
-                <li>
+        <section class="page-catalog__options">
+          <h2 class="visually-hidden">Форма выбора опций товаров</h2>
+
+          <form class="catalog-form" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="catalog-form__group">
+              <legend class="catalog-form__title">Сетка</legend>
+              <ul class="catalog-form__list">
+                <li class="catalog-form__item">
                   <input
+                    class="catalog-form__input visually-hidden"
                     type="radio"
                     id="adaptive"
-                    name="layout-filter"
+                    name="layout-option"
+                    value="adaptive"
                     checked
                   />
-                  <label for="adaptive">Адаптивная</label>
+                  <label class="catalog-form__label catalog-form__label--layout" for="adaptive">Адаптивная</label>
                 </li>
-                <li>
-                  <input type="radio" id="fixed" name="layout-filter" />
-                  <label for="fixed">Фиксированная</label>
+                <li class="catalog-form__item">
+                  <input
+                    class="catalog-form__input visually-hidden"
+                    type="radio"
+                    id="fixed"
+                    name="layout-option"
+                    value="fixed"
+                  />
+                  <label class="catalog-form__label catalog-form__label--layout" for="fixed">Фиксированная</label>
                 </li>
-                <li>
-                  <input type="radio" id="flexible" name="layout-filter" />
-                  <label for="flexible">Резиновая</label>
+                <li class="catalog-form__item">
+                  <input
+                    class="catalog-form__input visually-hidden"
+                    type="radio"
+                    id="flexible"
+                    name="layout-option"
+                    value="flexible"
+                    disabled
+                  />
+                  <label class="catalog-form__label catalog-form__label--layout" for="flexible">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="features-filter">
-              <legend class="features-filter__title">Особенности</legend>
-              <ul class="features-filter__list">
-                <li>
+            <fieldset class="catalog-form__group">
+              <legend class="catalog-form__title">Особенности</legend>
+              <ul class="catalog-form__list">
+                <li class="catalog-form__item">
                   <input
+                    class="catalog-form__input visually-hidden"
                     type="checkbox"
                     id="slider"
-                    name="features-filter"
+                    name="features-option"
+                    value="slider"
                     checked
                   />
-                  <label for="slider">Слайдер</label>
+                  <label class="catalog-form__label catalog-form__label--features" for="slider">Слайдер</label>
                 </li>
-                <li>
-                  <input type="checkbox" id="features" name="features-filter" />
-                  <label for="features">Блок преимуществ</label>
+                <li class="catalog-form__item">
+                  <input
+                    class="catalog-form__input visually-hidden"
+                    type="checkbox"
+                    id="features"
+                    name="features-option"
+                    value="features"
+                  />
+                  <label class="catalog-form__label catalog-form__label--features" for="features">Блок преимуществ</label>
                 </li>
-                <li>
-                  <input type="checkbox" id="news" name="features-filter" />
-                  <label for="news">Новости</label>
+                <li class="catalog-form__item">
+                  <input
+                    class="catalog-form__input visually-hidden"
+                    type="checkbox"
+                    id="news"
+                    name="features-option"
+                    value="news"
+                    checked
+                  />
+                  <label class="catalog-form__label catalog-form__label--features" for="news">Новости</label>
                 </li>
-                <li>
-                  <input type="checkbox" id="gallery" name="features-filter" />
-                  <label for="gallery">Галерея</label>
+                <li class="catalog-form__item">
+                  <input
+                    class="catalog-form__input visually-hidden"
+                    type="checkbox"
+                    id="gallery"
+                    name="features-filter"
+                    value="gallery"
+                  />
+                  <label class="catalog-form__label catalog-form__label--features" for="gallery">Галерея</label>
                 </li>
-                <li>
-                  <input type="checkbox" id="cart" name="features-filter" />
-                  <label for="cart">Корзина</label>
+                <li class="catalog-form__item">
+                  <input
+                    class="catalog-form__input visually-hidden"
+                    type="checkbox"
+                    id="cart"
+                    name="features-option"
+                    value="cart"
+                  />
+                  <label class="catalog-form__label catalog-form__label--features" for="cart">Корзина</label>
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">Показать</button>
+            <button class="button button--catalog" type="submit">
+              <span class="button__text">Показать</span>
+            </button>
           </form>
         </section>
 
         <section class="catalog">
           <h2 class="visually-hidden">Каталог товаров</h2>
 
-          <div class="sorting">
-            <b class="sorting__title">Сортировать:</b>
-            <div class="sorting__container">
-              <ul class="sorting__list">
-                <li>
-                  <button class="sorting__button">По цене</button>
-                </li>
-                <li>
-                  <button class="sorting__button">По типу</button>
-                </li>
-                <li>
-                  <button class="sorting__button">По названию</button>
-                </li>
-              </ul>
-              <div class="sorting__controls">
-                <button class="sorting__control">down</button>
-                <button class="sorting__control">up</button>
-              </div>
+          <form class="catalog-filter">
+            <h3 class="catalog-filter__title">Сортировать:</h3>
+
+            <div class="catalog-filter__container">
+              <fieldset class="catalog-filter__group">
+                <ul class="catalog-filter__list">
+                  <li>
+                    <input class="catalog-filter__input visually-hidden" type="radio" id="price" name="filter-option" value="price" checked />
+                    <label class="catalog-filter__label" for="price">По цене</label>
+                  </li>
+                  <li>
+                    <input class="catalog-filter__input visually-hidden" type="radio" id="type" name="filter-option" value="type" />
+                    <label class="catalog-filter__label" for="type">По типу</label>
+                  </li>
+                  <li>
+                    <input class="catalog-filter__input visually-hidden" type="radio" id="name" name="filter-option" value="name" />
+                    <label class="catalog-filter__label" for="name">По названию</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter__group catalog-filter__group--arrow-block">
+                <input class="catalog-filter__input visually-hidden" type="radio" id="arrow-down" name="arrow-controls" value="down" checked />
+                <label class="catalog-filter__label-arrow catalog-filter__label-arrow--arrow-down" for="arrow-down"></label>
+                <input class="catalog-filter__input visually-hidden" type="radio" id="arrow-up" name="arrow-controls" value="up" />
+                <label class="catalog-filter__label-arrow catalog-filter__label-arrow--arrow-up" for="arrow-up"></label>
+              </fieldset>
             </div>
-          </div>
-
-
+          </form>
         </section>
       </div>
-
-
 
       <section class="contacts">
         <h2 class="visually-hidden">Контактаная информация студии</h2>
@@ -145,12 +190,10 @@
               191186, Санкт-Петербург,<br />
               ул. Б. Конюшенная, д. 19/8
             </p>
-            <a class="contact-details__tel" href="tel:+78122757575"
-              >тел. +7 (812) 275-75-75</a
-            >
-            <a class="button button--contact" href="./blank.html"
-              >Напишите нам</a
-            >
+            <a class="contact-details__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="button button--contact" href="./blank.html">
+              <span class="button__text">Напишите нам</span>
+            </a>
           </div>
         </div>
         <picture>
@@ -172,23 +215,17 @@
         <ul class="social__list">
           <li>
             <a class="social__link social__link--vk" href="./blank.html">
-              <span class="visually-hidden"
-                >страница студии Nerds в Вконтакте</span
-              >
+              <span class="visually-hidden">страница студии Nerds в Вконтакте</span>
             </a>
           </li>
           <li>
             <a class="social__link social__link--fb" href="./blank.html">
-              <span class="visually-hidden"
-                >страница студии Nerds в Facebook</span
-              >
+              <span class="visually-hidden">страница студии Nerds в Facebook</span>
             </a>
           </li>
           <li>
             <a class="social__link social__link--insta" href="./blank.html">
-              <span class="visually-hidden"
-                >страница студии Nerds в Instagramm</span
-              >
+              <span class="visually-hidden">страница студии Nerds в Instagramm</span>
             </a>
           </li>
         </ul>

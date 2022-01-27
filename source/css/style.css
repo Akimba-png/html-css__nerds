@@ -18,4 +18,8 @@
 @import "./blocks/stats.css";
 @import "./blocks/partners.css";
 @import "./blocks/contacts.css";
-@import "./blocks/contact-details.css"
+@import "./blocks/contact-details.css";
+@import "./blocks/catalog/page-catalog.css";
+@import "./blocks/catalog/catalog-form.css";
+@import "./blocks/catalog/catalog.css";
+@import "./blocks/catalog/catalog-filter.css";

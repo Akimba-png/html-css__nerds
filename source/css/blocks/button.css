@@ -63,3 +63,17 @@
 .button--contact {
   width: 219px;
 }
+
+.button--catalog {
+  width: 100%;
+  color: inherit;
+  background-color: var(--background-color);
+}
+
+.button--catalog:hover {
+  background-color: var(--button-catalog-hover-color);
+}
+
+.button--catalog:active {
+  background-color: var(--button-catalog-active-color);
+}
