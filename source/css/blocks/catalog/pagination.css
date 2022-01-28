@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  max-width: 760px;
+  column-gap: 11px;
+}
+
+.pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: page-number;
+}
+
+.pagination__link {
+  min-width: 50px;
+  height: 50px;
+  counter-increment: page-number;
+}
+
+.pagination__link--current {
+  background-color: transparent;
+  border: 3px solid var(--background-color);
+}
+
+.pagination__link--current:hover {
+  background-color: transparent;
+  border: 3px solid var(--background-color);
+}
+
+.pagination__link::before {
+  content: counter(page-number);
+}
+
+.pagination__button {
+  align-self: flex-start;
+}

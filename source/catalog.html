@@ -10,7 +10,7 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation wrapper">
-        <a class="main-navigation__link-logo" href="./index.html">
+        <a class="main-navigation__link-logo" href="/">
           <svg width="160" height="65" role="img" aria-label="Логотип студии Nerds">
             <use xlink:href="./img/icons/sprite.svg#logo"></use>
           </svg>
@@ -44,7 +44,6 @@
       <div class="page-catalog__wrapper wrapper">
         <section class="page-catalog__options">
           <h2 class="visually-hidden">Форма выбора опций товаров</h2>
-
           <form class="catalog-form" method="post" action="https://echo.htmlacademy.ru">
             <fieldset class="catalog-form__group">
               <legend class="catalog-form__title">Сетка</legend>
@@ -83,7 +82,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="catalog-form__group">
               <legend class="catalog-form__title">Особенности</legend>
               <ul class="catalog-form__list">
@@ -146,13 +144,10 @@
             </button>
           </form>
         </section>
-
         <section class="catalog">
           <h2 class="visually-hidden">Каталог товаров</h2>
-
-          <form class="catalog-filter">
+          <form class="catalog__filter catalog-filter">
             <h3 class="catalog-filter__title">Сортировать:</h3>
-
             <div class="catalog-filter__container">
               <fieldset class="catalog-filter__group">
                 <ul class="catalog-filter__list">
@@ -178,9 +173,129 @@
               </fieldset>
             </div>
           </form>
+          <ul class="catalog__products products">
+            <li class="products__item">
+              <picture>
+                <!-- <source type="image/webp" srcset="./img/catalog/.webp 1x, ./img/catalog/@2x.webp 2x"> -->
+                <img class="products__image" src="./img/catalog/sedona.jpg" srcset="./img/catalog/sedona@2x.jpg 2x" width="358" height="578" alt="Изображение">
+              </picture>
+              <div class="products__container">
+                <a class="products__link" href="blank.html">
+                  <h3 class="products__title">Sedona</h3>
+                </a>
+                <p class="products__text">
+                  Информационный сайт<br>
+                  для туристов
+                </p>
+                <button class="products__button button button--products" type="button">9&nbsp;900&nbsp;&#8381;</button>
+              </div>
+            </li>
+            <li class="products__item">
+              <picture>
+                <!-- <source type="image/webp" srcset="./img/catalog/pink.webp 1x, ./img/catalog/pink@2x.webp 2x"> -->
+                <img class="products__image" src="./img/catalog/pink.jpg" srcset="./img/catalog/pink@2x.jpg 2x" width="358" height="578" alt="Изображение">
+              </picture>
+              <div class="products__container">
+                <a class="products__link" href="blank.html">
+                  <h3 class="products__title">Pink App</h3>
+                </a>
+                <p class="products__text">
+                  Продуктовый лендинг<br>
+                  приложения для iOS и Android
+                </p>
+                <button class="products__button button button--products" type="button">9&nbsp;900&nbsp;&#8381;</button>
+              </div>
+            </li>
+            <li class="products__item">
+              <picture>
+                <!-- <source type="image/webp" srcset="./img/catalog/borodinsky.webp 1x, ./img/catalog/borodinsky@2x.webp 2x"> -->
+                <img class="products__image" src="./img/catalog/borodinsky.jpg" srcset="./img/catalog/borodinsky@2x.jpg 2x" width="358" height="578" alt="Изображение">
+              </picture>
+              <div class="products__container">
+                <a class="products__link" href="blank.html">
+                  <h3 class="products__title">Barbershop</h3>
+                </a>
+                <p class="products__text">
+                  Сайт салона красоты.<br>
+                  Для мужчин, да
+                </p>
+                <button class="products__button button button--products" type="button">9&nbsp;900&nbsp;&#8381;</button>
+              </div>
+            </li>
+            <li class="products__item">
+              <picture>
+                <!-- <source type="image/webp" srcset="./img/catalog/mishka.webp 1x, ./img/catalog/mishka@2x.webp 2x"> -->
+                <img class="products__image" src="./img/catalog/mishka.jpg" srcset="./img/catalog/mishka@2x.jpg 2x" width="358" height="578" alt="Изображение">
+              </picture>
+              <div class="products__container">
+                <a class="products__link" href="blank.html">
+                  <h3 class="products__title">Mishka</h3>
+                </a>
+                <p class="products__text">
+                  Интернет-магазин<br>
+                  вязаных игрушек
+                </p>
+                <button class="products__button button button--products" type="button">9&nbsp;900&nbsp;&#8381;</button>
+              </div>
+            </li>
+            <li class="products__item">
+              <picture>
+                <!-- <source type="image/webp" srcset="./img/catalog/academy.webp 1x, ./img/catalog/academy@2x.webp 2x"> -->
+                <img class="products__image" src="./img/catalog/academy.jpg" srcset="./img/catalog/academy@2x.jpg 2x" width="358" height="578" alt="Изображение">
+              </picture>
+              <div class="products__container">
+                <a class="products__link" href="blank.html">
+                  <h3 class="products__title">A plus</h3>
+                </a>
+                <p class="products__text">
+                  Лендинг курсов повышения<br>
+                  квалификации
+                </p>
+                <button class="products__button button button--products" type="button">9&nbsp;900&nbsp;&#8381;</button>
+              </div>
+            </li>
+            <li class="products__item">
+              <picture>
+                <!-- <source type="image/webp" srcset="./img/catalog/kvast.webp 1x, ./img/catalog/kvast@2x.webp 2x"> -->
+                <img class="products__image" src="./img/catalog/kvast.jpg" srcset="./img/catalog/kvast@2x.jpg 2x" width="358" height="578" alt="Изображение">
+              </picture>
+              <div class="products__container">
+                <a class="products__link" href="blank.html">
+                  <h3 class="products__title">Кваст</h3>
+                </a>
+                <p class="products__text">
+                  Промо-сайт производителя<br>
+                  крафтового кваса
+                </p>
+                <button class="products__button button button--products" type="button">9&nbsp;900&nbsp;&#8381;</button>
+              </div>
+            </li>
+          </ul>
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="paginat">
+                <a class="
+                  pagination__link
+                  pagination__link--current
+                  button
+                  button--catalog
+                  button--pagination
+                  button--pagination-current"
+                ></a>
+              </li>
+              <li>
+                <a class="pagination__link button button--catalog button--pagination" href="#"></a>
+              </li>
+              <li>
+                <a class="pagination__link button button--catalog button--pagination" href="#"></a>
+              </li>
+            </ul>
+            <button class="pagination__button button button--catalog">
+              <span class="button__text">Следующая</span>
+            </button>
+          </div>
         </section>
       </div>
-
       <section class="contacts">
         <h2 class="visually-hidden">Контактаная информация студии</h2>
         <div class="contacts__wrapper wrapper">
@@ -209,6 +324,7 @@
         <div class="contacts__map-canvas" id="map"></div>
       </section>
     </main>
+
     <footer class="main-footer wrapper">
       <section class="social">
         <h2 class="visually-hidden">Студия Nerds в социальных сетях</h2>

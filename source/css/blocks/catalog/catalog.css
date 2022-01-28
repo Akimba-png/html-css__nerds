@@ -1,4 +1,11 @@
 .catalog {
   padding-left: 14px;
-  outline: 1px solid green;
+}
+
+.catalog__filter {
+  margin-bottom: 48px;
+}
+
+.catalog__products {
+  margin-bottom: 56px;
 }

@@ -1,5 +1,6 @@
-const PAGE_INDEX_ROUTE = '/index.html';
+const PAGE_INDEX_ROUTE = '/';
 const currentRoute = window.location.pathname;
+console.log(currentRoute)
 
 if (currentRoute === PAGE_INDEX_ROUTE) {
   const sliderElement = document.querySelector(".slider");

@@ -1,5 +1,5 @@
 .page-catalog__container {
-  margin-bottom: 56px;
+  margin-bottom: 54px;
   background-color: var(--background-color);
 }
 
@@ -15,4 +15,5 @@
 .page-catalog__wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  margin-bottom: 60px;
 }

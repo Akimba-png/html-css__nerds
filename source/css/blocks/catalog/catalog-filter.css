@@ -19,6 +19,7 @@
 .catalog-filter__group {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .catalog-filter__list {

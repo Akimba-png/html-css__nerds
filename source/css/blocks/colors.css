@@ -39,4 +39,7 @@
   --input-icons-color: #4d4d4d;
   --filter-arrow-icon-color: #a6a6a6;
   --filter-arrow-active-icon-color: #231f20;
+
+  /* catalog*/
+  --catalog-item-shadow-color: rgba(0, 1, 1, 0.25);
 }

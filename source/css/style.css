@@ -23,3 +23,5 @@
 @import "./blocks/catalog/catalog-form.css";
 @import "./blocks/catalog/catalog.css";
 @import "./blocks/catalog/catalog-filter.css";
+@import "./blocks/catalog/products.css";
+@import "./blocks/catalog/pagination.css";
