@@ -1,7 +1,7 @@
 {
   "name": "nerds",
   "version": "1.0.0",
-  "description": "Тренировочный проект по вёрстке от Html Academy",
+  "description": "Проект вёрстки по БЭМ - nerds",
   "main": "index.js",
   "scripts": {
     "stylelint": "stylelint source/**/*.css",
